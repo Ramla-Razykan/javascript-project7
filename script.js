@@ -1,4 +1,4 @@
-let randomNum = Math.floor(Math.random() * 100) + 1;
+let randomNum = Math.floor(Math.random() * 10) + 1;
 let numAttempts = 0;
 
 function guessbutton() {
@@ -23,7 +23,7 @@ function guessbutton() {
 }
 
 function restartbutton(){
-    randomNum = Math.floor(Math.random() * 100) + 1;
+    randomNum = Math.floor(Math.random() * 10) + 1;
     numAttempts = 0;
     document.getElementById('inputGuess').value = "";
     messageToUser = document.getElementById('message').textContent = "";
